@@ -3,7 +3,7 @@
     <div class="section" id="user-section">
         <div id="user-detail">
             <div class="avatar">
-                <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w64 rounded">
+                <img src="{{ asset('assets/img/sample/avatar/avatar1.jpg') }}" alt="avatar" class="imaged w64 rounded">
             </div>
             <div id="user-info">
                 <h2 id="user-name">Bayu Cakra Aditya</h2>
