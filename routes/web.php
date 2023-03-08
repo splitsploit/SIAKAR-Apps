@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
-Route::post('proses-login', [AuthController::class, 'prosesLogin'])->name('login.proses');
+Route::post('login', [AuthController::class, 'login'])->name('login');
+Route::get('logout-employee', [AuthController::class, 'logoutEmployee'])->name('logout.employee');

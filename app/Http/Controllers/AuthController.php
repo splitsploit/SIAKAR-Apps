@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    public function prosesLogin(Request $request) {
+    public function login(Request $request) {
         if(Auth::guard('employee')->attempt([
             'nik' => $request->nik,
             'password' => $request->password,
@@ -17,5 +17,10 @@ class AuthController extends Controller
         }
 
         return "Login Gagal";
+    }
+
+    public function logoutEmployee() {
+        Auth::guard('employee')->logout();
+        return redirect('/');
     }
 }

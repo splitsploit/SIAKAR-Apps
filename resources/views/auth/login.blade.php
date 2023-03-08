@@ -38,7 +38,7 @@
                 <h4>Fill the form to log in</h4>
             </div>
             <div class="section mt-1 mb-5">
-                <form action="{{ route('login.proses') }}" method="POST">
+                <form action="{{ route('login') }}" method="POST">
                     @csrf
                     <div class="form-group boxed">
                         <div class="input-wrapper">
